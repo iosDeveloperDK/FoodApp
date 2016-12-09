@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		923AE0151DFAEBA100D129BB /* DKCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AE0141DFAEBA100D129BB /* DKCategoryTableViewCell.m */; };
+		923AE0181DFAF22600D129BB /* DKOfferCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AE0171DFAF22600D129BB /* DKOfferCollectionViewCell.m */; };
+		923AE01B1DFAF25900D129BB /* DKOffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AE01A1DFAF25900D129BB /* DKOffersViewController.m */; };
+		923AE01E1DFAF9FF00D129BB /* DKDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AE01D1DFAF9FF00D129BB /* DKDescriptionViewController.m */; };
+		923AE0211DFAFE0200D129BB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AE0201DFAFE0200D129BB /* SWRevealViewController.m */; };
+		923AE0241DFB014C00D129BB /* DKContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AE0231DFB014C00D129BB /* DKContactsViewController.m */; };
+		923AE0261DFB292600D129BB /* Патимейкер.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923AE0251DFB292600D129BB /* Патимейкер.jpg */; };
+		926A82FE1DFAC08500DD3B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A82FD1DFAC08500DD3B24 /* main.m */; };
+		926A83011DFAC08500DD3B24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A83001DFAC08500DD3B24 /* AppDelegate.m */; };
+		926A83041DFAC08500DD3B24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A83031DFAC08500DD3B24 /* ViewController.m */; };
+		926A83071DFAC08500DD3B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A83051DFAC08500DD3B24 /* Main.storyboard */; };
+		926A83091DFAC08500DD3B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926A83081DFAC08500DD3B24 /* Assets.xcassets */; };
+		926A830C1DFAC08500DD3B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A830A1DFAC08500DD3B24 /* LaunchScreen.storyboard */; };
+		926A83151DFAC27500DD3B24 /* DKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A83141DFAC27500DD3B24 /* DKParser.m */; };
+		926A83181DFAC28F00DD3B24 /* DKDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 926A83171DFAC28F00DD3B24 /* DKDataManager.m */; };
+		ABD6B6AD862DC0FD87E92F25 /* libPods-FoodApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B14B150C16C6A2AD30E1BC /* libPods-FoodApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		923AE0131DFAEBA100D129BB /* DKCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCategoryTableViewCell.h; sourceTree = "<group>"; };
+		923AE0141DFAEBA100D129BB /* DKCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCategoryTableViewCell.m; sourceTree = "<group>"; };
+		923AE0161DFAF22600D129BB /* DKOfferCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKOfferCollectionViewCell.h; sourceTree = "<group>"; };
+		923AE0171DFAF22600D129BB /* DKOfferCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKOfferCollectionViewCell.m; sourceTree = "<group>"; };
+		923AE0191DFAF25900D129BB /* DKOffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKOffersViewController.h; sourceTree = "<group>"; };
+		923AE01A1DFAF25900D129BB /* DKOffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKOffersViewController.m; sourceTree = "<group>"; };
+		923AE01C1DFAF9FF00D129BB /* DKDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDescriptionViewController.h; sourceTree = "<group>"; };
+		923AE01D1DFAF9FF00D129BB /* DKDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDescriptionViewController.m; sourceTree = "<group>"; };
+		923AE01F1DFAFE0200D129BB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		923AE0201DFAFE0200D129BB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		923AE0221DFB014C00D129BB /* DKContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKContactsViewController.h; sourceTree = "<group>"; };
+		923AE0231DFB014C00D129BB /* DKContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKContactsViewController.m; sourceTree = "<group>"; };
+		923AE0251DFB292600D129BB /* Патимейкер.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Патимейкер.jpg"; sourceTree = "<group>"; };
+		926A82F91DFAC08500DD3B24 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		926A82FD1DFAC08500DD3B24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		926A82FF1DFAC08500DD3B24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		926A83001DFAC08500DD3B24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		926A83021DFAC08500DD3B24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		926A83031DFAC08500DD3B24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		926A83061DFAC08500DD3B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		926A83081DFAC08500DD3B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		926A830B1DFAC08500DD3B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		926A830D1DFAC08500DD3B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926A83131DFAC27500DD3B24 /* DKParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKParser.h; sourceTree = "<group>"; };
+		926A83141DFAC27500DD3B24 /* DKParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKParser.m; sourceTree = "<group>"; };
+		926A83161DFAC28F00DD3B24 /* DKDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDataManager.h; sourceTree = "<group>"; };
+		926A83171DFAC28F00DD3B24 /* DKDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDataManager.m; sourceTree = "<group>"; };
+		A13807CDBBF14643EF0B0CCE /* Pods-FoodApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A5B14B150C16C6A2AD30E1BC /* libPods-FoodApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D626B420673EB4785C2CADA8 /* Pods-FoodApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		926A82F61DFAC08500DD3B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD6B6AD862DC0FD87E92F25 /* libPods-FoodApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		923AE0271DFB35C700D129BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				923AE0281DFB364F00D129BB /* Cell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		923AE0281DFB364F00D129BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				923AE0131DFAEBA100D129BB /* DKCategoryTableViewCell.h */,
+				923AE0141DFAEBA100D129BB /* DKCategoryTableViewCell.m */,
+				923AE0161DFAF22600D129BB /* DKOfferCollectionViewCell.h */,
+				923AE0171DFAF22600D129BB /* DKOfferCollectionViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		923AE0291DFB365C00D129BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				926A83021DFAC08500DD3B24 /* ViewController.h */,
+				926A83031DFAC08500DD3B24 /* ViewController.m */,
+				923AE0191DFAF25900D129BB /* DKOffersViewController.h */,
+				923AE01A1DFAF25900D129BB /* DKOffersViewController.m */,
+				923AE01C1DFAF9FF00D129BB /* DKDescriptionViewController.h */,
+				923AE01D1DFAF9FF00D129BB /* DKDescriptionViewController.m */,
+				923AE0221DFB014C00D129BB /* DKContactsViewController.h */,
+				923AE0231DFB014C00D129BB /* DKContactsViewController.m */,
+				923AE01F1DFAFE0200D129BB /* SWRevealViewController.h */,
+				923AE0201DFAFE0200D129BB /* SWRevealViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		923AE02A1DFB367400D129BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				926A83131DFAC27500DD3B24 /* DKParser.h */,
+				926A83141DFAC27500DD3B24 /* DKParser.m */,
+				926A83161DFAC28F00DD3B24 /* DKDataManager.h */,
+				926A83171DFAC28F00DD3B24 /* DKDataManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		926A82F01DFAC08500DD3B24 = {
+			isa = PBXGroup;
+			children = (
+				926A82FB1DFAC08500DD3B24 /* FoodApp */,
+				926A82FA1DFAC08500DD3B24 /* Products */,
+				DCDC7FEF81C472E43FC148CF /* Pods */,
+				B8FAB0DCCE261ABCD53832AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		926A82FA1DFAC08500DD3B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				926A82F91DFAC08500DD3B24 /* FoodApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		926A82FB1DFAC08500DD3B24 /* FoodApp */ = {
+			isa = PBXGroup;
+			children = (
+				923AE02A1DFB367400D129BB /* Model */,
+				923AE0291DFB365C00D129BB /* Controller */,
+				923AE0271DFB35C700D129BB /* View */,
+				926A83081DFAC08500DD3B24 /* Assets.xcassets */,
+				926A83051DFAC08500DD3B24 /* Main.storyboard */,
+				926A830A1DFAC08500DD3B24 /* LaunchScreen.storyboard */,
+				923AE0251DFB292600D129BB /* Патимейкер.jpg */,
+				926A82FC1DFAC08500DD3B24 /* Supporting Files */,
+			);
+			path = FoodApp;
+			sourceTree = "<group>";
+		};
+		926A82FC1DFAC08500DD3B24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				926A830D1DFAC08500DD3B24 /* Info.plist */,
+				926A82FF1DFAC08500DD3B24 /* AppDelegate.h */,
+				926A83001DFAC08500DD3B24 /* AppDelegate.m */,
+				926A82FD1DFAC08500DD3B24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8FAB0DCCE261ABCD53832AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5B14B150C16C6A2AD30E1BC /* libPods-FoodApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCDC7FEF81C472E43FC148CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A13807CDBBF14643EF0B0CCE /* Pods-FoodApp.debug.xcconfig */,
+				D626B420673EB4785C2CADA8 /* Pods-FoodApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		926A82F81DFAC08500DD3B24 /* FoodApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 926A83101DFAC08500DD3B24 /* Build configuration list for PBXNativeTarget "FoodApp" */;
+			buildPhases = (
+				C299FE020EFDF186003E1333 /* 📦 Check Pods Manifest.lock */,
+				926A82F51DFAC08500DD3B24 /* Sources */,
+				926A82F61DFAC08500DD3B24 /* Frameworks */,
+				926A82F71DFAC08500DD3B24 /* Resources */,
+				44D0817175ADAE70CFE005B2 /* 📦 Embed Pods Frameworks */,
+				25174576242CB412EFF2FEB0 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodApp;
+			productName = FoodApp;
+			productReference = 926A82F91DFAC08500DD3B24 /* FoodApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		926A82F11DFAC08500DD3B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Denis;
+				TargetAttributes = {
+					926A82F81DFAC08500DD3B24 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4JP9FY6Z2A;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 926A82F41DFAC08500DD3B24 /* Build configuration list for PBXProject "FoodApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 926A82F01DFAC08500DD3B24;
+			productRefGroup = 926A82FA1DFAC08500DD3B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				926A82F81DFAC08500DD3B24 /* FoodApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		926A82F71DFAC08500DD3B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926A830C1DFAC08500DD3B24 /* LaunchScreen.storyboard in Resources */,
+				923AE0261DFB292600D129BB /* Патимейкер.jpg in Resources */,
+				926A83091DFAC08500DD3B24 /* Assets.xcassets in Resources */,
+				926A83071DFAC08500DD3B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25174576242CB412EFF2FEB0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44D0817175ADAE70CFE005B2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodApp/Pods-FoodApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C299FE020EFDF186003E1333 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		926A82F51DFAC08500DD3B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				923AE0181DFAF22600D129BB /* DKOfferCollectionViewCell.m in Sources */,
+				923AE01E1DFAF9FF00D129BB /* DKDescriptionViewController.m in Sources */,
+				926A83041DFAC08500DD3B24 /* ViewController.m in Sources */,
+				923AE0241DFB014C00D129BB /* DKContactsViewController.m in Sources */,
+				926A83151DFAC27500DD3B24 /* DKParser.m in Sources */,
+				926A83181DFAC28F00DD3B24 /* DKDataManager.m in Sources */,
+				926A83011DFAC08500DD3B24 /* AppDelegate.m in Sources */,
+				923AE0151DFAEBA100D129BB /* DKCategoryTableViewCell.m in Sources */,
+				923AE0211DFAFE0200D129BB /* SWRevealViewController.m in Sources */,
+				923AE01B1DFAF25900D129BB /* DKOffersViewController.m in Sources */,
+				926A82FE1DFAC08500DD3B24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		926A83051DFAC08500DD3B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				926A83061DFAC08500DD3B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		926A830A1DFAC08500DD3B24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				926A830B1DFAC08500DD3B24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		926A830E1DFAC08500DD3B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		926A830F1DFAC08500DD3B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		926A83111DFAC08500DD3B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13807CDBBF14643EF0B0CCE /* Pods-FoodApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4JP9FY6Z2A;
+				INFOPLIST_FILE = FoodApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosDKdev.FoodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		926A83121DFAC08500DD3B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D626B420673EB4785C2CADA8 /* Pods-FoodApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4JP9FY6Z2A;
+				INFOPLIST_FILE = FoodApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosDKdev.FoodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		926A82F41DFAC08500DD3B24 /* Build configuration list for PBXProject "FoodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926A830E1DFAC08500DD3B24 /* Debug */,
+				926A830F1DFAC08500DD3B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		926A83101DFAC08500DD3B24 /* Build configuration list for PBXNativeTarget "FoodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926A83111DFAC08500DD3B24 /* Debug */,
+				926A83121DFAC08500DD3B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 926A82F11DFAC08500DD3B24 /* Project object */;
+}
