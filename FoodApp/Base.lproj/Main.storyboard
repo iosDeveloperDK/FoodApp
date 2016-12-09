@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -326,7 +325,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PtF-Ba-xYm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="TCd-fy-8dx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TCd-fy-8dx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -355,7 +354,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C8F-nm-IeK" id="RbM-u4-YDn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меню" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3f-D3-M2O">
@@ -378,7 +377,7 @@
                                         <rect key="frame" x="0.0" y="79" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g3n-zW-NX2" id="gxn-b4-99s">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7a-4z-Xp8">
@@ -423,36 +422,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ma-18-79G" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Sea-33-xkf"/>
-                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKq-wu-1Dh">
-                                <rect key="frame" x="115" y="372" width="146" height="30"/>
-                                <state key="normal" title="Текущая положение"/>
-                                <connections>
-                                    <action selector="actionCurrentLocation:" destination="T6C-Ju-ERN" eventType="touchUpInside" id="y76-lG-2cL"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsP-wn-INj">
-                                <rect key="frame" x="24" y="414" width="327" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93656378979999999" green="0.93861049409999997" blue="0.95605641600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PsP-wn-INj" firstAttribute="top" secondItem="2Ma-18-79G" secondAttribute="bottom" constant="50" id="8AK-e8-wnd"/>
-                            <constraint firstItem="NKq-wu-1Dh" firstAttribute="top" secondItem="2Ma-18-79G" secondAttribute="bottom" constant="8" id="A11-as-K7a"/>
                             <constraint firstItem="2Ma-18-79G" firstAttribute="leading" secondItem="pFM-KI-8FW" secondAttribute="leading" id="HPx-EG-k5x"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PsP-wn-INj" secondAttribute="trailing" constant="8" id="N1v-63-wSH"/>
                             <constraint firstAttribute="trailing" secondItem="2Ma-18-79G" secondAttribute="trailing" id="NVZ-Jm-yC0"/>
-                            <constraint firstItem="PsP-wn-INj" firstAttribute="leading" secondItem="pFM-KI-8FW" secondAttribute="leadingMargin" constant="8" id="cJf-Lw-hKC"/>
-                            <constraint firstItem="NKq-wu-1Dh" firstAttribute="centerX" secondItem="pFM-KI-8FW" secondAttribute="centerX" id="eH2-6q-6i1"/>
                             <constraint firstItem="2Ma-18-79G" firstAttribute="top" secondItem="NP9-H6-JWd" secondAttribute="bottom" id="h1R-Vo-0Jz"/>
+                            <constraint firstItem="gqk-7l-zse" firstAttribute="top" secondItem="2Ma-18-79G" secondAttribute="bottom" id="spF-QD-zwA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UYA-Cc-Qvd">
@@ -460,7 +439,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="2Ma-18-79G" id="9Yr-d8-bsy"/>
-                        <outlet property="labelAdress" destination="PsP-wn-INj" id="EOF-vX-1VL"/>
                         <outlet property="sidebarButton" destination="YQb-VL-0oh" id="Abo-Da-yOI"/>
                     </connections>
                 </viewController>
@@ -473,7 +451,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Lo-ig-c2p" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6YY-fl-sj1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6YY-fl-sj1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

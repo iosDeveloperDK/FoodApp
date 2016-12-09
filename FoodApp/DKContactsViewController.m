@@ -17,6 +17,7 @@
 @property(nonatomic, readonly) CLLocationCoordinate2D position;
 
 @property(nonatomic, readonly) NSString *adress;
+@property(nonatomic, readonly) NSString *phone;
 
 - (instancetype)initWithPosition:(CLLocationCoordinate2D)position adress:(NSString *)adress;
 
@@ -24,10 +25,11 @@
 
 @implementation DKPoint
 
-- (instancetype)initWithPosition:(CLLocationCoordinate2D)position adress:(NSString *)adress {
+- (instancetype)initWithPosition:(CLLocationCoordinate2D)position adress:(NSString *)adress phone:(NSString*)phone{
     if ((self = [super init])) {
         _position = position;
         _adress = adress;
+        _phone = phone;
     }
     return self;
 }
@@ -38,11 +40,14 @@
 {
     GMUClusterManager *_clusterManager;
     CLLocation* currentLocation;
+    NSString* currentAdress;
+
     NSString* adress;
+    UILabel* labelAdress;
+    UILabel* LabelPhone;
+    UIView* infoView;
 }
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
-
-@property (weak, nonatomic) IBOutlet UILabel *labelAdress;
 
 @property (weak, nonatomic) IBOutlet GMSMapView *containerView;
 
@@ -106,32 +111,66 @@
     
     [self.locationManager startUpdatingLocation];
 
+    [self.containerView layoutIfNeeded];
+    
+    //создаем деск вью
+    
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    
+    UIButton* location = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    location.frame = CGRectMake(CGRectGetMaxX(rect) - 40, 300, 30, 30);
+    
+    [location setBackgroundColor:[UIColor blackColor]];
+    
+    [location addTarget:self action:@selector(showCurrentLocation) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIImageView* backImg = [[UIImageView alloc]initWithFrame:CGRectMake(7, 7, 16, 16)];
+    
+    backImg.image = [UIImage imageNamed:@"home"];
+    
+    [location addSubview:backImg];
+    
+    [self.containerView addSubview:location];
+
+    infoView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 120, self.view.bounds.size.width, 120)];
+    
+    infoView.backgroundColor = [UIColor whiteColor];
+    
+    LabelPhone = [[UILabel alloc]initWithFrame:CGRectMake(15, 8, CGRectGetWidth(infoView.bounds)-15, 21)];
+    LabelPhone.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:13.0f];
+    
+    [infoView addSubview:LabelPhone];
+    
+    labelAdress = [[UILabel alloc]initWithFrame:CGRectMake(15, 28, CGRectGetWidth(infoView.bounds)-15, 21)];
+    labelAdress.font = [UIFont fontWithName:@"HelveticaNeue" size:13.0f];
+    
+    [infoView addSubview:labelAdress];
+    
+    [self.containerView addSubview:infoView];
+    
 }
+
+
 
 #pragma mark - Actions
 
-- (IBAction)actionCurrentLocation:(UIButton *)sender {
-    
-    self.labelAdress.text = adress;
-    
-    
-    
-    [self showCurrentLocation:currentLocation];
-    
-}
 
+-(void)showCurrentLocation{
 
--(void)showCurrentLocation:(CLLocation*)location{
+    labelAdress.text = [NSString stringWithFormat:@"Адрес: %@", currentAdress];
+    
+    LabelPhone.text = [NSString stringWithFormat:@"Телефон: %@", @"233-00-00"];
 
     GMSMarker *marker = [[GMSMarker alloc] init];
     
-    marker.position = location.coordinate;
+    marker.position = currentLocation.coordinate;
     
     marker.icon = [UIImage imageNamed:@"current_map_location"];
 
     marker.map = self.containerView;
     
-    GMSCameraPosition *newCamera = [GMSCameraPosition cameraWithTarget:location.coordinate zoom:5];
+    GMSCameraPosition *newCamera = [GMSCameraPosition cameraWithTarget:currentLocation.coordinate zoom:5];
     
     GMSCameraUpdate *update = [GMSCameraUpdate setCamera:newCamera];
     
@@ -151,14 +190,15 @@
         
         currentLocation = locations.lastObject;
         
-        CLGeocoder* geo = [[CLGeocoder alloc]init];
+        GMSGeocoder * geo = [GMSGeocoder geocoder];
         
-        [geo reverseGeocodeLocation:currentLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        [geo reverseGeocodeCoordinate:currentLocation.coordinate completionHandler:^(GMSReverseGeocodeResponse * _Nullable data, NSError * _Nullable error) {
             
-            adress = [placemarks lastObject].locality;
+             currentAdress = data.firstResult.lines[0];
             
         }];
-
+        
+        [self.locationManager stopUpdatingLocation];
     }
     
 }
@@ -176,7 +216,9 @@
     
     if (poiItem != nil) {
         
-        self.labelAdress.text = poiItem.adress;
+        labelAdress.text = [NSString stringWithFormat:@"Адрес: %@", poiItem.adress];
+        
+        LabelPhone.text = [NSString stringWithFormat:@"Телефон: %@", poiItem.phone];
         
     }
     
@@ -202,19 +244,32 @@
 
 - (void)generateClusterItems {
     
-    //можно было получать адреса при помощи CLGeocoder, но с Беларусью он не дружит(, можно было использовать Google Maps Geocoding API для этой задачи
+    //можно было получать адреса при помощи CLGeocoder, но с Беларусью он не дружит
     
-    NSArray* arrayAdress = @[@"50 лет победы", @"Абрикосовая ул.", @"Авакяна ул.", @"Нагорный пер."];
+    NSArray* arrayAdress = @[@"263-23-19",@"243-23-00",@"253-33-66",@"223-33-09"];
     
-    for (NSString* str in arrayAdress) {
+    for (NSString* phone in arrayAdress) {
         
         double lat = 53 + [self randomScale];
         
         double lng = 27 + [self randomScale];
 
-        id<GMUClusterItem> item = [[DKPoint alloc] initWithPosition:CLLocationCoordinate2DMake(lat, lng) adress:str];
+        GMSGeocoder * geo = [GMSGeocoder geocoder];
+        
+        CLLocation* location = [[CLLocation alloc]initWithLatitude:lat longitude:lng];
+        
+        [geo reverseGeocodeCoordinate:location.coordinate completionHandler:^(GMSReverseGeocodeResponse * _Nullable data, NSError * _Nullable error) {
+            
+           id<GMUClusterItem> item = [[DKPoint alloc] initWithPosition:CLLocationCoordinate2DMake(lat, lng) adress:data.firstResult.lines[0] phone:phone];
+            
+            [_clusterManager addItem:item];
 
-        [_clusterManager addItem:item];
+            [_clusterManager cluster];
+            
+        }];
+
+        
+
 
     }
     
