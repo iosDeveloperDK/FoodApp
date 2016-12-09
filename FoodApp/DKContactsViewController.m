@@ -147,6 +147,8 @@
     
     [infoView addSubview:labelAdress];
     
+    infoView.hidden = YES;
+
     [self.containerView addSubview:infoView];
     
 }
@@ -157,6 +159,8 @@
 
 
 -(void)showCurrentLocation{
+
+    infoView.hidden = NO;
 
     labelAdress.text = [NSString stringWithFormat:@"Адрес: %@", currentAdress];
     
@@ -216,6 +220,8 @@
     
     if (poiItem != nil) {
         
+        infoView.hidden = NO;
+
         labelAdress.text = [NSString stringWithFormat:@"Адрес: %@", poiItem.adress];
         
         LabelPhone.text = [NSString stringWithFormat:@"Телефон: %@", poiItem.phone];
@@ -267,8 +273,6 @@
             [_clusterManager cluster];
             
         }];
-
-        
 
 
     }
