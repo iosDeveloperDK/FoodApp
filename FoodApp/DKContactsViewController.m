@@ -19,7 +19,7 @@
 @property(nonatomic, readonly) NSString *adress;
 @property(nonatomic, readonly) NSString *phone;
 
-- (instancetype)initWithPosition:(CLLocationCoordinate2D)position adress:(NSString *)adress;
+- (instancetype)initWithPosition:(CLLocationCoordinate2D)position adress:(NSString *)adress phone:(NSString*)phone;
 
 @end
 
